@@ -3670,5 +3670,6 @@ Webflow.define('tabs', function($, _) {
  * Webflow: Interactions: Init
  */
 Webflow.require('ix').init([
-  {"slug":"nav-radio-dropdown","name":"Nav Radio Dropdown","value":{"style":{},"triggers":[{"type":"hover","selector":".radio-dropdown-list","stepsA":[{"display":"block","wait":500}],"stepsB":[{"display":"none","wait":300}]}]}}
+  {"slug":"radio-dropdown","name":"Radio Dropdown","value":{"style":{},"triggers":[{"type":"hover","selector":".radio-dropdown-list","stepsA":[{"display":"block"}],"stepsB":[{"display":"none"}]}]}},
+  {"slug":"twitter-thumb","name":"Twitter Thumb","value":{"style":{},"triggers":[{"type":"hover","loopA":true,"stepsA":[{"transition":"transform 500ms ease 0ms","scale":0.85},{"transition":"transform 500ms ease 0ms","scale":1}],"stepsB":[{"transition":"transform 500ms ease 0ms","scale":1}]}]}}
 ]);

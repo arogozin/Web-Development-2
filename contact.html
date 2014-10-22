@@ -1,55 +1,170 @@
 <!DOCTYPE html>
 <!-- This site was created in Webflow. http://www.webflow.com-->
-<!-- Last Published: Wed Sep 24 2014 20:49:07 GMT+0000 (UTC) -->
-<html data-wf-site="5420dfe7dc9f75dd73ac6854" data-wf-page="54232a7b56c06d43410eabb6">
+<!-- Last Published: Wed Oct 22 2014 19:43:27 GMT+0000 (UTC) -->
+<html data-wf-site="527c57e621165f5a06000244" data-wf-page="53d6a39c2df8c80f33c54b4f">
 <head>
   <meta charset="utf-8">
-  <title>Contact - AfterHours.FM</title>
+  <title>AfterHours.Fm - Contact</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="generator" content="Webflow">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/webflow.css">
-  <link rel="stylesheet" type="text/css" href="css/ahfm-dev.webflow.css">
+  <link rel="stylesheet" type="text/css" href="css/afterhours.webflow.css">
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
   <script>
     WebFont.load({
       google: {
-        families: ["Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic","Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic"]
+        families: ["Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic","Montserrat:400,700","Merriweather:300,400,700,900","Oswald:300,400,700"]
       }
     });
   </script>
   <script type="text/javascript" src="js/modernizr.js"></script>
-  <link rel="shortcut icon" type="image/x-icon" href="https://daks2k3a4ib2z.cloudfront.net/placeholder/favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favivon.png">
+  <link rel="apple-touch-icon" href="images/favivon-mobile.png">
+  <style type="text/css">
+    div.full-page {width:100%;}
+  </style>
 </head>
-<body class="smoke-gray">
-  <div class="w-nav navbar" data-collapse="medium" data-animation="default" data-duration="400" data-contain="1">
-    <div class="w-container">
-      <a class="w-nav-brand branding-link" href="index.html">
-        <img class="logo" src="images/ahfm_logo_minimal.png" alt="542329558a632d4241cab092_ahfm_logo_minimal.png">
-      </a>
-      <nav class="w-nav-menu" role="navigation"><a class="w-nav-link nav-link" href="index.html">Home</a><a class="w-nav-link nav-link" href="news.html">News</a>
-        <div class="w-dropdown radio-dropdown" data-delay="0" data-ix="nav-radio-dropdown">
-          <div class="w-dropdown-toggle nav-link" data-ix="nav-radio-dropdown">
-            <div>Radio</div>
-            <div class="w-icon-dropdown-toggle"></div>
-          </div>
-          <nav class="w-dropdown-list radio-dropdown-list" data-ix="nav-radio-dropdown"><a class="w-dropdown-link dropdown-link" href="mobile-apps.html">Mobile Apps</a><a class="w-dropdown-link dropdown-link" href="radio-shows.html">Radio Shows</a><a class="w-dropdown-link dropdown-link" href="artist-profiles.html">Artist Profiles</a><a class="w-dropdown-link dropdown-link"
-            href="residency.html">Apply for Residency</a>
-          </nav>
-        </div><a class="w-nav-link nav-link" href="contact.html">Contact</a><a class="w-nav-link tune-in-link" href="#">Tune In</a>
-      </nav>
-      <div class="w-nav-button">
-        <div class="w-icon-nav-menu"></div>
+<body>
+  <div class="nav-wrapper">
+    <div class="w-nav navbar" data-collapse="medium" data-animation="default" data-duration="400" data-contain="1">
+      <div class="w-container">
+        <a class="w-nav-brand brand-link" href="index.html">
+          <img class="logo" src="images/ahfm_logo_minimal.png" alt="53c6f79703cf279b75dbd215_ahfm_logo_minimal.png">
+        </a>
+        <nav class="w-nav-menu nav-menu" role="navigation"><a class="w-nav-link nav-link" href="index.html">Home</a><a class="w-nav-link nav-link" href="news.html">Blog</a>
+          <div class="w-dropdown" data-delay="0">
+            <div class="w-dropdown-toggle radio-dropdown nav-link" data-ix="radio-dropdown">
+              <div>Radio</div>
+              <div class="w-icon-dropdown-toggle"></div>
+            </div>
+            <nav class="w-dropdown-list radio-dropdown-list" data-ix="radio-dropdown"><a class="w-dropdown-link dropdown-link" href="apps.html">Apps</a><a class="w-dropdown-link dropdown-link" href="radio.html">Radio Shows</a><a class="w-dropdown-link dropdown-link" href="artists.html">Artist Profiles</a><a class="w-dropdown-link dropdown-link"
+              href="residency.html">Residency</a>
+            </nav>
+          </div><a class="w-nav-link nav-link" href="contact.html">Contact</a><a class="w-nav-link tune-in" href="#">Tune In</a>
+        </nav>
+        <div class="w-nav-button">
+          <div class="w-icon-nav-menu"></div>
+        </div>
       </div>
+    </div>
+  </div>
+  <div class="section page-cover"></div>
+  <div class="section page-title-wrapper">
+    <div class="w-container container centered">
+      <h1 class="page-heading centered no-line">get in touch</h1>
+      <p class="page-description">Got a question or have an idea? Send us a message and we’ll get back to you as soon as possible.</p>
     </div>
   </div>
   <div class="section">
     <div class="w-container container">
-      <h1>Contact</h1>
+      <div class="w-row">
+        <div class="w-col w-col-8 column">
+          <div class="contact-form-block">
+            <h3 class="h3 column-heading">contact form</h3>
+            <div class="w-form contact-form-wrapper">
+              <form class="contact-form" id="email-form" name="email-form" data-name="Email Form">
+                <div class="w-row">
+                  <div class="w-col w-col-6 form-column">
+                    <div class="form-block">
+                      <label for="name">Name:</label>
+                      <input class="w-input" id="name" type="text" placeholder="Enter your name" name="name" data-name="Name">
+                    </div>
+                  </div>
+                  <div class="w-col w-col-6 form-column">
+                    <div class="form-block">
+                      <label for="email">Email Address:</label>
+                      <input class="w-input" id="email" type="email" placeholder="Enter your email address" name="email" data-name="Email" required="required">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-block">
+                  <textarea class="w-input form-text-area" id="Message" placeholder="Enter your message" name="Message" required="required" autofocus="autofocus" data-name="Message"></textarea>
+                </div>
+                <div class="form-block actions">
+                  <div class="form-hint-block">
+                    <div class="form-hint">If you would like to apply for residency, please visit</div>
+                  </div><a class="link small" href="residency.html">Apply for Residency</a><a class="button submit" href="#">Submit</a>
+                </div>
+              </form>
+              <div class="w-form-done">
+                <p>Thank you! Your submission has been received!</p>
+              </div>
+              <div class="w-form-fail">
+                <p>Oops! Something went wrong while submitting the form :(</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-col w-col-4 page-sidebar">
+          <h3 class="h3 column-heading">get latest updates</h3>
+          <div class="inline-text margin-right">Stay up to date with the latest in trance &amp;&nbsp;progressive by following AfterHours.FM on</div><a class="link" href="https://twitter.com/afterhoursfm">Twitter</a>
+          <div class="inline-text margin-right">,</div><a class="link" href="https://twitter.com/afterhoursfm">Facebook</a>
+          <div class="inline-text margin-right">, and</div><a class="link" href="https://twitter.com/afterhoursfm">Instagram</a>
+          <p class="margin-top">Feel free to share your thoughts using hashtag <strong>#AfterHoursFM</strong>&nbsp;on any social network.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section footer-nav">
+    <div class="w-container">
+      <div class="w-row">
+        <div class="w-col w-col-2">
+          <a class="w-inline-block footer-brand-link" href="#">
+            <img src="images/ahfm_logo_inverted_minimal.png" alt="53b6ef94e05702c711d014cf_ahfm_logo_inverted_minimal.png">
+          </a>
+        </div>
+        <div class="w-col w-col-7 column centered">
+          <ul class="w-list-unstyled footer-nav">
+            <li class="footer-nav-item"><a class="footer-nav-link" href="index.html">Home</a>
+            </li>
+            <li class="footer-nav-item"><a class="footer-nav-link" href="news.html">News</a>
+            </li>
+            <li class="footer-nav-item"><a class="footer-nav-link" href="radio.html">Radio</a>
+            </li>
+            <li class="footer-nav-item"><a class="footer-nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="w-col w-col-3">
+          <ul class="w-list-unstyled footer-social">
+            <li class="footer-social-item"><a class="footer-social-link" href="https://twitter.com/afterhoursfm"></a>
+            </li>
+            <li class="footer-social-item"><a class="footer-social-link" href="https://twitter.com/afterhoursfm"></a>
+            </li>
+            <li class="footer-social-item"><a class="footer-social-link" href="https://twitter.com/afterhoursfm"></a>
+            </li>
+            <li class="footer-social-item"><a class="footer-social-link" href="https://twitter.com/afterhoursfm"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section gray">
+    <div class="w-container container centered">
+      <h3 class="footer-listeners">5,000 listeners are tuned in world wide.</h3>
+      <ul class="w-list-unstyled footer-other-link">
+        <li class="footer-other-item"><a class="footer-other-link" href="residency.html">Apply for Residency</a>
+        </li>
+        <li class="footer-other-item"><a class="footer-other-link" href="contact.html">Contact Us</a>
+        </li>
+      </ul>
     </div>
   </div>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/webflow.js"></script>
   <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+  <script type="text/javascript">
+    $(document).ready(function() {
+        vph = $(window).height();
+        $('.full-page').css('height',vph);
+    });
+    $(window).resize(function(){
+        vpw = $(window).width();
+        vph = $(window).height();
+        $('.full-page').css('height',vph);
+    });
+  </script>
 </body>
 </html>
